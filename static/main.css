@@ -1,0 +1,44 @@
+body {
+	margin:0;padding:0;
+}
+
+li {	
+	color: #EFF3F5;
+	line-height: 2.4em;
+	margin-right: 10px;
+}
+
+li a{
+	text-decoration: none;
+	display: inline;
+	color:#EFF3F5;
+}
+
+a:link {font-family:Arial; color:white; text-decoration:none}
+a:visited {font-family:Arial; color:green; text-decoration:none}
+a:hover {font-family:Arial; color:black; text-decoration:underline}
+
+h2{
+	display: inline;
+	margin-right: 50px;
+	padding-right: 1px;
+	color:#EFF3F5;
+}
+canvas {
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+td{
+	vertical-align:top;
+}
+
+td_header{
+	text-align:center;
+	color:#EFF3F5;	
+	background-color: #006699;
+}
+
+
+
+

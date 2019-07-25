@@ -1,0 +1,87 @@
+
+<html>
+<head>
+  <link rel="stylesheet" href="static/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <style>
+
+  body{
+   background-color: #C2CADO;
+ }
+
+#wrap {
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+  height: 1000px;
+  background-color: #C2CADO;
+}
+
+#left, #right {
+     display: inline-block;
+     padding: 50px;
+
+}
+#center {
+     display: inline-block;
+     padding: 50px;
+     align-items: top;
+
+}
+
+.btn-group button {
+  padding: 1px 10px; /* Some padding */
+  cursor: pointer; /* Pointer/hand icon */
+  display: block; /* Make the buttons appear below each other */
+}
+
+.aTable td {
+    padding: 10px;
+    padding-top: .1em;
+    padding-bottom: .5em;
+}
+
+.striped {
+        color:"white";
+        background-color:#374785;
+    }
+
+</style>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<body ng-app="App">
+
+
+<div ng-controller="CFC">
+<div id="wrap" align="center">
+<br>
+<br>
+
+    Name :<input type="text" ng-model="name">&ensp;
+    UniqueID <input type="text" ng-model="uniqueid">&ensp;
+    Info : <select ng-model="selectedName" ng-options="x for x in tabels">
+   </select>
+<button class="button"  ng-click="Details()">Get Details</button>
+<br>
+<br>
+<br>
+<div align="center">
+<table border="1">
+<tr ng-repeat="(x, y) in ldata[0]">
+  <td>//x//</td>
+  <td>//y//</td>  
+</tr>
+</table>
+</div>
+
+</div>
+</div>
+</div>
+</body>
+</html>
